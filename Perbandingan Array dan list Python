@@ -1,0 +1,19 @@
+Perbandingan Array dan list Python
+
+
+>>> #list python
+>>>
+>>> x_list = [0,1,2,3,4]
+>>> print(2* x_list + 3) #ERROR
+Traceback (most recent call last):
+  File "<python-input-67>", line 1, in <module>
+    print(2* x_list + 3)               #ERROR
+          ~~~~~~~~~~^~~
+TypeError: can only concatenate list (not "int") to list
+>>>
+>>> #Array
+>>>
+>>> import numpy as np
+>>> x_array = np.array([0,1,2,3,4])
+>>> print(2 * x_array + 3)             #LANGSUNG BEKERJA
+[ 3  5  7  9 11]
