@@ -1,0 +1,16 @@
+fungsi rekursif: bilangan faktorial
+
+
+>>> #Rumus faktorial
+>>> #n! = n x (n - 1)!
+>>>
+>>> def faktorial(n):
+...     if n == 0 or n == 1:
+...         return 1
+...     else:
+...         return n * faktorial(n - 1)
+...
+>>> angka = int(input("masukkan bilangan: "))
+masukkan bilangan: 5
+>>> print(f"faktorial dari {angka} adalah {faktorial(angka)}")
+faktorial dari 5 adalah 120
